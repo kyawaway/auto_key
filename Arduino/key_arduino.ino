@@ -38,12 +38,12 @@ void loop() {
 
   if(door_digital_read > 0){
     delay(100);
-    Serial.print(1);
     servo.write(90);
+    Serial.print(1);
     delay(100);
   }else{
-    Serial.print(0);
     servo.write(0);
+    Serial.print(0);
     delay(100);
   }
 
