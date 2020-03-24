@@ -5,7 +5,7 @@ app = Flask(__name__)
 
 @app.route('/', methods=['GET', 'POST'])
 def form():
-    status = False #本当は電流が流れているかから読み取る
+    status = False #本当は電流が流れているかから読み取る。Trueなら鍵が閉まっていて、Falseなら空いている。
     if request.method == 'POST':
         print("POSTされたIDは？" + str(request.form['id']))
         print("POSTされたPASSWORDは？" + str(request.form['pwd']))
@@ -28,6 +28,6 @@ def form():
             return render_template('index.html', status="ロックされていません！！")
 
 if __name__ == "__main__":
-    idid = 'aaa'
-    ps = 'bbb'
+    idid = 'aaa' #適宜設定
+    ps = 'bbb' #適宜設定
     app.run(host='0.0.0.0', debug= True)
