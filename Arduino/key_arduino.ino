@@ -9,7 +9,7 @@ void setup() {
   Serial.begin(9600);
 
   servo.attach(9);
-  servo.write(0);
+  servo.write(0);//初期状態はclose,serial=0
   
 }
 
@@ -21,13 +21,13 @@ void loop() {
   switch(var){
     case '0':
       servo.write(0);
-      Serial.write(0);
+      Serial.print(0);
       delay(10000);
       
       break;
     case '1':
       servo.write(90);
-      Serial.write(1);
+      Serial.print(1);
       
       break;
     default:
