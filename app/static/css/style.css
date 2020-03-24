@@ -1,0 +1,51 @@
+/*body {
+  background-color: #339933;
+  font-family: 'Lato';
+  font-weight: 300;
+  font-size: 16rm;
+  color: white;
+}*/
+
+/*body {
+  background: linear-gradient(-45deg, rgba(246, 255, 0, .8), rgba(255, 0, 161, .8)),
+  url(../image/bg-cherrybrossam.jpg);
+  background-size: cover;
+}*/
+
+/*body {
+  background: #2bc0e4; 
+  background: -webkit-linear-gradient(to right, #2bc0e4, #eaecc6); 
+  background: linear-gradient(to right, #2bc0e4, #eaecc6); 
+  color: white;
+}*/
+
+
+body {
+  background: #f1f2b5;
+  background: -webkit-linear-gradient(to right, #f1f2b5, #135058);
+  background: linear-gradient(to right, #f1f2b5, #135058);
+}
+
+
+.navbar-default {
+  background: #f1f2b5;
+  background: -webkit-linear-gradient(to right, #f1f2b5, #135058);
+  background: linear-gradient(to right, #f1f2b5, #135058);
+  /*background-color: #339933;*/
+  border-color: transparent;
+}
+
+.navbar-default .navbar-brand {
+  color: black;
+}
+
+#headerwrap {
+  /* background: url(../img/bg01.jpg) no-repeat center top; */
+  font-size: 16rm;
+  padding-top: 100px;
+  /*background-color: #339933;*/
+  background-position: center center;
+  min-height: 300px;
+  width: 100%;
+  background-size: cover;
+}
