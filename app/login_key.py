@@ -22,12 +22,8 @@ app = Flask(__name__)
 
 @app.route('/', methods=['GET', 'POST'])
 def form():
-<<<<<<< HEAD
-    status = False #本当は電流が流れているかから読み取る。Trueなら鍵が閉まっていて、Falseなら空いている。
-=======
     #status = False
     status = get_status() #鍵の状態を読み取り
->>>>>>> tehhuu
     if request.method == 'POST':
         print("POSTされたIDは？" + str(request.form['id']))
         print("POSTされたPASSWORDは？" + str(request.form['pwd']))
@@ -52,13 +48,8 @@ def form():
             return render_template('index.html', status="ロックされていません！！")
 
 if __name__ == "__main__":
-<<<<<<< HEAD
-    idid = 'aaa' #適宜設定
-    ps = 'bbb' #適宜設定
-    app.run(host='0.0.0.0', debug= True)
-=======
     app.secret_key = os.urandom(12)
     idid = 'a' #適宜設定
     ps = 'b' #適宜設定
     app.run(host='0.0.0.0', debug= True)
->>>>>>> tehhuu
+
