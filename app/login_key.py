@@ -48,7 +48,6 @@ def form():
             return render_template('index.html', status="ロックされていません！！")
 
 if __name__ == "__main__":
-    app.secret_key = os.urandom(12)
     idid = 'a' #適宜設定
     ps = 'b' #適宜設定
     app.run(host='0.0.0.0', debug= True)
