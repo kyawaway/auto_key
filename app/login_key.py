@@ -26,24 +26,32 @@ def form():
 
     #status = False
     status = get_status() #鍵の状態を読み取り
+
+    print(status)
     if request.method == 'POST':
         print("POSTされたIDは？" + str(request.form['id']))
         print("POSTされたPASSWORDは？" + str(request.form['pwd']))
         if str(request.form['id'])==idid and str(request.form['pwd'])==ps:
-            if status==False:
+            if status==True:
                 open_key() #鍵を開ける。
+                print("open")
                 status = get_status()
+                print(status)
+
+
                 #status = True
                 if status != True:
                     return render_template('error.html')
                 else:
                     return render_template('opened.html')
             else:
+                print(status)
                 return render_template('already_opened.html')
         else:
             return render_template('not_opened.html', status="ロックされていません！！")
 
     else:
+        status = get_status()
         if status==True:
             return render_template('index.html', status="OK")
         else:
@@ -52,5 +60,5 @@ def form():
 if __name__ == "__main__":
     idid = 'a' #適宜設定
     ps = 'b' #適宜設定
-    app.run(port=8080, debug= True)
+    app.run(host='0.0.0.0',port=80, debug= True)
 
