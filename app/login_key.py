@@ -4,7 +4,7 @@ import os
 
 def open_key(): #鍵を開ける
     ser = serial.Serial('COM6',9600)
-    ser.write(b"1")
+    ser.write(b'1')
 
 def get_status(): #鍵が開いているかの状態を取得
     ser = serial.Serial('COM6',9600)
@@ -22,6 +22,8 @@ app = Flask(__name__)
 
 @app.route('/', methods=['GET', 'POST'])
 def form():
+    
+
     #status = False
     status = get_status() #鍵の状態を読み取り
     if request.method == 'POST':
@@ -50,5 +52,5 @@ def form():
 if __name__ == "__main__":
     idid = 'a' #適宜設定
     ps = 'b' #適宜設定
-    app.run(host='0.0.0.0', debug= True)
+    app.run(port=8080, debug= True)
 
