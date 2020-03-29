@@ -45,7 +45,7 @@ def form():
                 if status == True: #万が一装置が正常に動かなかった場合
                     return render_template('message.html', message='装置にエラーが発生しました。至急確認してください。')
                 else:
-                    send_email('bunshucho@gmail.com', 'note') #ロックが解除された旨をメールで通知
+                    send_email(user.email, 'note') #ロックが解除された旨をメールで通知
                     return render_template('opened.html')
             else:
                 return render_template('already_opened.html')
