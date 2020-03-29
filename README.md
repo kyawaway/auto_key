@@ -1,6 +1,8 @@
 閉めルンです
 ====
 
+![S__163815430 (2)](https://user-images.githubusercontent.com/48121881/77843198-d1336300-71d5-11ea-8d9c-aa0ea4339d8f.jpg)
+
 ## Description
 
 ID・パスワードを渡すと鍵を自動で解錠してくれるWEBアプリ
@@ -25,8 +27,6 @@ ID・パスワードを渡すと鍵を自動で解錠してくれるWEBアプリ
 ## Usage
 
 追記予定
-
-![image](https://user-images.githubusercontent.com/48121881/77843131-f07dc080-71d4-11ea-860d-f3c594ec4236.png)
 
 ## Install
 
