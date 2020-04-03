@@ -30,11 +30,11 @@ Please check 'Introduction.pptx'
 
 ・Flask 1.1.1
 
-(You can install by 'pip install flask==1.1.1')
+(You can get by 'pip install flask==1.1.1')
 
 ・SQLAlchemy
 
-(You can install by 'pip install sqlalchemy')
+(You can get by 'pip install sqlalchemy')
 
 ## Author
 
