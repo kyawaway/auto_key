@@ -7,9 +7,11 @@
 
 ID・パスワードを渡すと鍵を自動で解錠してくれるWEBアプリ
 
-## Demo
+(A web application that automatically unlocks the key when you pass your ID and password)
 
-追記予定
+## Demo, Usage
+
+Please check 'Introduction.pptx'
 
 ## Requirement
 
@@ -24,21 +26,15 @@ ID・パスワードを渡すと鍵を自動で解錠してくれるWEBアプリ
 
 (・Arduino)
 
-## Usage
-
-追記予定
-
 ## Install
 
 ・Flask 1.1.1
-(pip install flask==1.1.1 でインストール可能)
+
+(You can install by 'pip install flask==1.1.1')
 
 ・SQLAlchemy
-(pip install sqlalchemy でインストール可能)
 
-## Contribution
-
-
+(You can install by 'pip install sqlalchemy')
 
 ## Author
 
